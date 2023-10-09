@@ -1,0 +1,617 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.header {
+    width:100%;
+    position:fixed;
+    z-index:10;
+    background-color:rgb(0, 0, 0);
+    color:goldenrod;
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+
+}
+/* .spl-items{
+    display:none;
+} */
+
+.nav2 {
+    display:flex;
+    /* justify-content:center; */
+    align-items: center;
+    
+}
+.nav2 a {
+     color:goldenrod;
+     text-decoration: none;
+     /* padding-right:25px; */
+}
+
+.nav1 i {
+    font-size:40px;
+    font-weight: bold;
+}
+.nav2 img {
+   height: 20px;
+   width:20px;
+} 
+.nav2 .set1 {
+    padding:5px;
+    font-size:20px;
+    font-weight: bold;
+}
+.nav2 .set2 {
+    /* font-size:0px; */
+    color:white;
+    padding:9px;
+}
+.nav2 .set1:hover {
+    background-color:white;
+}
+.nav2 .set2:hover {
+    background-color:peru;
+}
+input {
+    display:none;
+}
+input:checked ~ .nav2 {
+    right:0;
+    
+}
+.header label i {
+    display:none;
+}
+
+/* section */
+section {
+   padding-top:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* text-align:center; */
+    background-color:rgba(0,0,0,0.9);
+    color:white;
+    /* height:10vh; */
+}
+.box1 {
+    /* background-color:chocolate; */
+   /* text-align:center;  */
+   display: flex;
+}
+.box1 img {
+    height:235px;
+    width:250px;
+    animation: image1 3s infinite;
+}
+@keyframes image1{
+    0% {
+        opacity:1;
+        transform:rotate(0deg);
+    }
+    25%{
+        opacity:1;
+        transform:rotate(-20deg)
+    }
+   
+    75%{
+        opacity:1;
+        transform:rotate(20deg)
+    }
+    100%{
+        opacity:1;
+        transform:rotate(0deg);
+    }
+    
+} 
+.box2 {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 i,h1 {
+    font-size:40px;
+    margin-bottom:20px;
+}
+.box2 p{
+    width:35%;
+   margin-bottom:20px;
+}
+.box2 h1 {
+    color:goldenrod;
+}
+.box2 button {
+    padding: 5px 30px;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    color:goldenrod;
+    border-radius:10px;
+    border:none;
+    background-size: contain;
+    background: url("./tm-brown-button.png") no-repeat;
+}
+.box2 img {
+    display:block;
+    height:650px;
+    width:100%;
+    background-image: conic-gradient(black 0deg, black 90deg, white 90deg, white 180deg, white 270deg, black 270deg );
+    margin-top:20px;
+}
+
+article {
+   
+    /* background-color: aquamarine; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:80px;
+}
+
+article .box3 {
+    padding:30px;
+    width:55%;
+    display: flex;
+    
+}
+article .box3 .line1{
+    font-size:20px;
+    padding-right:30px;
+}
+.box3 .line1 h5 {
+    font-family: 'Dancing Script', cursive;
+    color:darkgoldenrod;
+    font-weight:bold;
+}
+article .box3 h3,b {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+article .box3 button {
+    color:darkgoldenrod;
+    margin-top:20px;
+    display:block;
+    padding: 10px 15px;
+    border:none;
+    border-radius: 15px;
+    background-image: url("./tm-brown-button.png");
+}
+article .box3 img {
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    border:10px solid darkkhaki;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    
+}
+
+article .box4 {
+   
+    width:80%;
+    /* background-color:aquamarine; */
+}
+article .box4 strong {
+    padding:10px;
+    font-size:30px;
+    color:darkgoldenrod;
+}
+
+.box4 .line2 {
+    background-color: white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.line2 .set {
+    font-family: 'Dancing Script', cursive;
+    margin-top:40px;
+    position: relative;
+    
+    width:30%;
+    border:2px solid white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20); */
+    /* border:1px solid black; */
+}
+
+.line2 .set1, .set3 {
+    height:530px;
+}
+.line2 .set2 {
+    height:470px;
+}
+.line2 .set2 img {
+    height:150px;
+    width:323px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+.line2 .set1 img, .set3 img {
+    height:200px;
+    width:324px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+.line2 .set h2 {
+    color:darkkhaki;
+    text-decoration: underline;
+}
+.line2 .set p {
+    padding:20px 0px 40px;
+}
+.line2 .set button {
+    position:absolute;
+    padding:20px 50px;
+    border-radius:50%;
+    bottom:-30px;
+    
+     background-color: darkgoldenrod;
+     border:5px dashed darkkhaki;
+     color:white;
+}
+
+.set:hover {
+   cursor:pointer;
+   transform:scale(1,1.1);
+   transition-duration:0.2s;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20)
+}
+aside {
+   
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+
+aside strong {
+    color:darkgoldenrod;
+}
+.box5 {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+   justify-content: center;
+    
+}
+
+.box5 .line3 {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.5);
+    position:absolute;
+    bottom:10px;
+    /* left:30px; */
+}
+.line3 h3{
+    padding-bottom:10px;
+}
+
+
+.box6 img {
+    height:250px;
+    width:480px;
+    
+}
+.box6 .line4{
+    display:flex;
+    justify-content: space-between;
+}
+.box6 .line4 img {
+    height:140px;
+    width:225px;
+}
+footer {
+    width:100%;
+    margin-top:30px;
+   display:flex;
+   flex-direction:column ;
+   align-items: center;
+   background-size: cover;
+    /* background: url("https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg?w=2000") no-repeat; */
+}
+.box7 {
+    color:darkgoldenrod;
+    font-size:30px;
+    margin-top:80px;
+}
+.box7, .box8 {
+    width:60%;
+    /* background-color: bisque; */
+    
+}
+.box8 {
+    background: url("https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg?w=2000") no-repeat;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:60px;
+    text-align: center;
+    
+}
+marquee {
+    font-size:40px;
+}
+.box8 h3 {
+    padding-bottom:10px;
+    font-weight:bold;
+    color:aquamarine;
+}
+.box8 ol {
+    font-weight: bold;
+    color:darkorange;
+} 
+.box8 span{
+    color:white;
+}
+.box8 .span1{
+    padding-left:30px;
+}
+.box8 .span2{
+    padding-left:36px;
+}
+.box8 .span3{
+    padding-left:25px;
+}
+.box8 .span4{
+    padding-left:53px;
+}
+.box8 .span5{
+    padding-left:40px;
+}
+.box8 button{
+    margin-top:20px;
+    padding:10px 10px;
+    border-radius:20px;
+    color:darkgoldenrod;
+    border:none;
+    background-image: url("./tm-brown-button.png");
+}
+
+footer .box9 {
+    width:100%;
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content: space-evenly;
+    padding:20px;
+    margin-top:40px;
+}
+footer .box9 .line6 {
+    display:flex;
+    flex-direction:column;
+}
+.box9 .line6,.line8 {
+    width:30%;
+}
+.box9 .line7 p, .line8 p{
+    padding-top:10px;
+    padding-bottom:5px;
+}
+.box9 .line7 {
+    width:20%;
+}
+.box9 .line8 i{
+    font-size:30px;
+    padding:5px;
+}
+
+@media screen and (max-width:425px) {
+   .header {
+    width:100%;
+    justify-content:space-between;
+   }
+  
+   .nav2 {
+    background-color: khaki;
+    flex-direction:column;
+    position:fixed;
+    width:50%;
+    height:90vh;
+    justify-content: space-evenly;
+    top:81px;
+    right:100%;
+    
+    transition:all 0.5s;
+   }
+   .nav2 .set2 {
+    color:black;
+    font-weight: bold;
+   }
+   input {
+    display:none;
+   }
+   .header label i {
+    display:block;
+}
+
+.box1 img {
+    height:180px;
+    width:80px;
+}
+.box2 p{
+    width:100%;
+}
+.box2 img {
+    height:400px;
+    width:100%;
+
+  
+}
+article .box3 {
+    width:100%;
+}
+article .box3 img {
+    height:100px;
+    width:150px;
+}
+/* article .box4 {
+    flex-direction: column;
+} */
+.box4 .line2 {
+    flex-direction: column;
+    
+}
+.box4 b {
+    display:none;
+} 
+.line2 .set {
+    width:100%;
+    margin-bottom:30px;
+}
+.line2 .set img {
+    width:150px;
+}
+aside {
+    flex-direction: column;
+    text-align: center;
+}
+
+aside .box5 img {
+    width:320px;
+}
+/* .box5 .line3 {
+    left:78px;
+} */
+aside .box6 img {
+    width:320px;
+}
+.box7 b{
+    display:none;
+}
+.box8 {
+    flex-direction:column;
+}
+
+footer .box9 {
+    flex-direction: column;
+    align-items: center;
+}
+.box9 .line6, .box9 .line7, .box9 .line8{
+    width:100%;
+    margin-top:10px;
+}
+
+}
+
+@media screen and (min-width:425px) and (max-width:800px) {
+    .header {
+        width:100%;
+        justify-content:space-between;
+       }
+    .nav2 {
+        background-color: khaki;
+        flex-direction:column;
+        position:fixed;
+        width:100%;
+        height:90vh;
+        justify-content: space-evenly;
+        top:81px;
+        right:100%;
+        
+        transition:all 0.5s;
+       }
+       .nav2 .set2 {
+        color:black;
+        font-weight: bold;
+       }
+       input {
+        display:none;
+       }
+       .header label i {
+        display:block;
+    }
+
+
+    .box1 img {
+        height:180px;
+        width:130px;
+    }
+    .box2 {
+        width:100%;
+        text-align:center;
+    }
+    .box2 p{
+        width:40%;
+      
+    }
+    .box2 img {
+        width:100%;
+        height:400px;
+        /* width:30px; */
+    }
+article {
+    width:100%;
+}
+    article .box3 img {
+        height:100px;
+        width:150px;
+    }
+.box4 b, .box7 b {
+    display:none;
+}
+.box4 .line2 {
+    flex-direction: column;
+    
+}
+.line2 .set {
+    width:100%;
+    margin-bottom:30px;
+}
+aside {
+    flex-direction: column;
+    align-items: center;
+}
+aside .box5 img {
+    height:200px;
+    width:430px;
+}
+aside .box6 img {
+    height:200px;
+    width:430px; 
+}
+.box6 .line4 img {
+    width:200px;
+}
+footer .box8{
+    flex-direction:column;
+}
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+    .container {
+        width:100%;
+    }
+    header {
+        width:100%;
+    }
+    article .box4 {
+        width:100%;
+    }
+    .line2 .set {
+        width:40%;
+        padding:10px;
+    }
+    .line2 .set img {
+        width:250px;
+    }
+    .box4 b, .box7 b {
+        display:none;
+    }
+    
+    aside img {
+      width:400px;
+    }
+    
+}
